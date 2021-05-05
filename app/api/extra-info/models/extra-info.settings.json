@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "extra_infos",
+  "info": {
+    "name": "ExtraInfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "has_delivery_service": {
+      "type": "boolean"
+    }
+  }
+}

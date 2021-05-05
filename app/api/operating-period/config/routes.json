@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/operating-periods",
+      "handler": "operating-period.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/operating-periods/count",
+      "handler": "operating-period.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/operating-periods/:id",
+      "handler": "operating-period.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/operating-periods",
+      "handler": "operating-period.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/operating-periods/:id",
+      "handler": "operating-period.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/operating-periods/:id",
+      "handler": "operating-period.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

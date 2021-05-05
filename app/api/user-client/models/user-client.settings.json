@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_clients",
+  "info": {
+    "name": "UserClient",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "cnpj": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "extra_info": {
+      "model": "extra-info"
+    },
+    "location": {
+      "model": "location"
+    },
+    "operating_period": {
+      "model": "operating-period"
+    },
+    "products": {
+      "collection": "products"
+    }
+  }
+}

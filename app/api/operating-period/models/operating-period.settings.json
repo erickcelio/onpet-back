@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operating_periods",
+  "info": {
+    "name": "OperatingPeriod",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "end_break": {
+      "type": "time"
+    },
+    "start_break": {
+      "type": "time"
+    },
+    "start_business_hour": {
+      "type": "time",
+      "required": true
+    },
+    "end_business_hour": {
+      "type": "time",
+      "required": true
+    }
+  }
+}
